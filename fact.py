@@ -13,6 +13,4 @@ for l in range(1, 5):
         print("If length is ", l, ", Perimeter = ", eval(expression))
     elif (expression == 'calculateArea(l)'):
         print("If length is ", l, ", Area = ", eval(expression))
-    else:
-        print('Wrong Function')
-        break
+  
