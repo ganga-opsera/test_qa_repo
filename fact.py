@@ -1,10 +1,18 @@
-# Python code to demonstrate naive method
-# to compute factorial
-n = 23
-fact = 1
+# Perimeter of Square
+def calculatePerimeter(l):
+    return 4*l
 
-for i in range(1, n+1):
-	fact = fact * i
+# Area of Square
+def calculateArea(l):
+    return l*l
 
-print("The factorial of 23 is : ", end="")
-print(fact)
+expression = input("Type a function: ")
+
+for l in range(1, 5):
+    if (expression == 'calculatePerimeter(l)'):
+        print("If length is ", l, ", Perimeter = ", eval(expression))
+    elif (expression == 'calculateArea(l)'):
+        print("If length is ", l, ", Area = ", eval(expression))
+    else:
+        print('Wrong Function')
+        break
